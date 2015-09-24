@@ -1,3 +1,5 @@
-/debug
-/obj
-/bin
+obj/
+debug/
+release/
+bin/
+ipch/
