@@ -5,10 +5,14 @@ public:
 	Tool();
 	virtual ~Tool();
 public:
-	const LPWSTR  GetCurrentDir();
-private :
-	LPWSTR   mDir;
+	const LPTSTR  GetCurrentDir() const;
+
+	const  LPTSTR  ToAbsolutePath(LPCTSTR  reletivePath);
+
+private:
+	LPTSTR      mDir;
 	DWORD    mDirSize;
+	LPTSTR    mTargetDir;
 private:
 	Tool(const Tool&);
 	Tool& operator=(const Tool&);

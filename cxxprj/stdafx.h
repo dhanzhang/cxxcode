@@ -14,3 +14,8 @@
 
 // TODO:  在此处引用程序需要的其他头文件
 #include <Windows.h>
+#include <Shlwapi.h>  
+ 
+#pragma comment(lib, "shlwapi.lib")  //Windows API   PathFileExists 
+
+ 
